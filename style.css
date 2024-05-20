@@ -244,8 +244,8 @@ h1 {
 }
 
 .circle-button {
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Adjust as needed */
+    width: 5vh; /* Adjust as needed */
+    height: 5vh; /* Adjust as needed */
     border-radius: 50%;
     background-color: #ccc; /* You can change this color */
     margin: 0 10px; /* Adjust as needed */
