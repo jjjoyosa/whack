@@ -22,8 +22,8 @@ function setGame() {
 }
 
 function startGameTimers() {
-    moleInterval = setInterval(setMole, 600);
-    plantInterval = setInterval(setPlant, 1000);
+    moleInterval = setInterval(setMole, 1000);
+    plantInterval = setInterval(setPlant, 1500);
 }
 
 function stopGameTimers() {
