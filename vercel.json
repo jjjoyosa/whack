@@ -1,6 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/index.html", "destination": "/" },
-    { "source": "/game.html", "destination": "/" }
+  "routes": [
+    { "src": "/home", "dest": "/index.html" },
+    { "src": "/game", "dest": "/game.html" }
   ]
 }
