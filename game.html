@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHACK-A-CAT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WHACK-A-CAT</h1>
+    <h2 id="score">0</h2>
+    <!-- 3x3 -->
+    <div id="board">
+    </div>
+    <button id="pauseBtn" onclick="togglePause()" class="pause-button">Pause</button>
+    <button id="instructionsBtn" onclick="displayInstructions()" class="instructions-button">Instructions</button>
+    <a href="index.html" class="menu-button">Back to Menu</a>
+    <div id="pauseMessage" class="pause-message">Game Paused. <br>Click button again to resume.</div>
+    <div id="gameOverMessage" class="game-over-message"></div>
+    <div id="instructionsMessage" class="instructions-message">
+        <p>How to Play:</p>
+        <p>Click to whack the cat while avoiding the dog.</p>
+        <br>
+        <p>Scoring:</p>
+        <p>Earn 10 points for each cat you successfully whack.</p>
+        <p>Avoid hitting the dog, as this will end the game.</p>
+        <br>
+        <p>Use the "Pause" button to pause the game. Click it again to resume.</p>
+        <p> Press the Instructions button again to exit.</p>
+        <p>Good luck and have fun!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
