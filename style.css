@@ -244,10 +244,10 @@ h1 {
 }
 
 .circle-button {
-    width: 5vh; /* Adjust as needed */
-    height: 5vh; /* Adjust as needed */
+    width: 5.5vh; /* Adjust as needed */
+    height: 5.5vh; /* Adjust as needed */
     border-radius: 50%;
-    background-color: #ccc; /* You can change this color */
+    background-color: #FFA500; /* You can change this color */
     margin: 0 10px; /* Adjust as needed */
     border: none;
     cursor: pointer;
