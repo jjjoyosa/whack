@@ -11,7 +11,7 @@ window.onload = function() {
 }
 
 function setGame() {
-    // Set up the grid in HTML
+    document.getElementById("board").innerHTML = ""; // Clear the board
     for (let i = 0; i < 9; i++) {
         let tile = document.createElement("div");
         tile.id = i.toString();
@@ -19,6 +19,10 @@ function setGame() {
         document.getElementById("board").appendChild(tile);
     }
     startGameTimers();
+    score = 0;
+    gameOver = false;
+    document.getElementById("score").innerText = score.toString();
+    document.getElementById("gameOverMessage").style.display = "none";
 }
 
 function startGameTimers() {
@@ -86,16 +90,20 @@ function selectTile() {
         gameOverMessage.innerText = "GAME OVER!" + "\nScore: " + finalScore + "\n Click this message to start a new game";
         gameOverMessage.style.display = "block";
         gameOverMessage.addEventListener("click", function() {
-            reloadPage(); 
-        });
+            resetGame(); 
+        }, { once: true }); // Ensure the event is only added once
+        stopGameTimers();
         gameOver = true;
     }
 }
 
-function reloadPage() {
-    window.location.reload(); // Reload the page
+function resetGame() {
+    currMoleTile = null;
+    currPlantTile = null;
+    score = 0;
+    gameOver = false;
+    setGame();
 }
-
 
 function togglePause() {
     pause = !pause;
@@ -119,5 +127,3 @@ function displayInstructions() {
         instructionsMessage.style.display = "block";
     }
 }
-
-
