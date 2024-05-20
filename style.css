@@ -238,3 +238,24 @@ h1 {
 .instructions-message h3 {
     margin-top: 0;
 }
+
+.circle-buttons {
+    text-align: center;
+}
+
+.circle-button {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #ccc; /* You can change this color */
+    margin: 0 10px; /* Adjust as needed */
+    border: none;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the image fits inside the button */
+}
+
+.circle-button img {
+    width: 100%; /* Ensures the image fills the button */
+    height: auto;
+}
+
