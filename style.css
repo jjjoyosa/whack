@@ -224,7 +224,7 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: none;
     position: fixed;
-    font-size: 2vw;
+    font-size: 3vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
